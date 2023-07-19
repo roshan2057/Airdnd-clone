@@ -14,6 +14,7 @@ const Footer = () => {
                         whith powerful easy to use tools, it's never been easier to dig deper ito waction rental data to keep you above the competition in a saturted market.
 
                     </div>
+                    <div><Button name={'Try it for Free'}/></div>
                 </div>
                 <div className='foot2'>
                     <div className='newsletter'>
