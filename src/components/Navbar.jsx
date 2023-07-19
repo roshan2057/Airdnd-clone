@@ -10,7 +10,7 @@ const Navigation = () => {
             <nav>
                 <div className="nav-bar">
                     <i className='bx bx-menu sidebarOpen' ></i>
-                    <span className="logo navLogo"><a href="#">AIRDNA</a></span>
+                    <span className="logo navLogo"><a href="/">AIRDNA</a></span>
                     <div className="menu">
                         <div className="logo-toggle">
                             <i className='bx bx-x siderbarClose'></i>
