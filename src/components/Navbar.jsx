@@ -1,6 +1,6 @@
 import React from 'react'
 import './navbar.css'
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
 import { Stack } from '@chakra-ui/react'
 
 
