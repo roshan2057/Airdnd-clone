@@ -1,6 +1,6 @@
 import React from 'react'
 import './navbar.css'
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
 import { Stack } from '@chakra-ui/react'
 
 
@@ -16,9 +16,9 @@ const Navigation = () => {
                             <i className='bx bx-x siderbarClose'></i>
                         </div>
                         <ul className="nav-links">
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="/">Solutions</a></li>
+                            <li><a href="/">Resources</a></li>
+                            <li><a href="/">Contact Us</a></li>
 
                         </ul>
                     </div>
