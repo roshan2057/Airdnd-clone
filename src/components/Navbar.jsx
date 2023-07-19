@@ -4,13 +4,13 @@ import { Button } from '@chakra-ui/react'
 import { Stack } from '@chakra-ui/react'
 
 
-const Navigation = () => {
+const Navbar = () => {
     return (
         <div>
             <nav>
                 <div className="nav-bar">
                     <i className='bx bx-menu sidebarOpen' ></i>
-                    <span className="logo navLogo"><a href="/">AIRDNA</a></span>
+                    <span className="logo navLogo"><a href="/">IRON-RIM</a></span>
                     <div className="menu">
                         <div className="logo-toggle">
                             <i className='bx bx-x siderbarClose'></i>
@@ -40,4 +40,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation
+export default Navbar
