@@ -16,9 +16,9 @@ const Navigation = () => {
                             <i className='bx bx-x siderbarClose'></i>
                         </div>
                         <ul className="nav-links">
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="/">Solutions</a></li>
+                            <li><a href="/">Resources</a></li>
+                            <li><a href="/">Contact Us</a></li>
 
                         </ul>
                     </div>
