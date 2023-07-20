@@ -1,7 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './login.css'
 
 const Login = () => {
+
+    const [clicked, setClicked] = useState(false);
+    const [disabled, setDisabled] = useState(true);
+
+    const [data, setData] = useState({
+        email: '',
+        password: ''
+    });
+
+    const handleData = (e) => {
+        const { name, value } = e.target;
+        setData((prev) => ({
+            ...prev,
+            [name]: value,
+        }))
+    }
+
+    useEffect(() => {
+        // Email validation regex pattern
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Check if email is valid and password length is at least 8 characters
+        const isEmailValid = emailPattern.test(data.email);
+        const isPasswordValid = data.password.length >= 8;
+
+        // Enable or disable the button based on the validation results
+        setDisabled(!(isEmailValid && isPasswordValid));
+    }, [data.email, data.password]);
+
     return (
         <section className='login'>
             <header className='login-header'>
@@ -9,7 +38,7 @@ const Login = () => {
                 <p className='login-sign'>Don't have an account? <a href="/signup">Sign Up</a></p>
             </header>
             <div className='login-box'>
-                <form className='login-form' autocomplete>
+                <form className='login-form' autoComplete="off">
                     <h2>Welcome to MarketMinder</h2>
                     <div className='login-form-top'>
                         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/753px-Google_%22G%22_Logo.svg.png' alt="Google Logo" width={23} height={23} />
@@ -22,14 +51,14 @@ const Login = () => {
                     </div>
                     <div className='login-form-box'>
                         <div className='input-div' >
-                            <input type="text" />
+                            <input type="text" name="email" value={data.email} onChange={(e) => handleData(e)} />
                             <p>Email</p>
                         </div>
                         <div className='input-div' >
-                            <input type="text" />
+                            <input type="text" name="password" value={data.password} onChange={(e) => handleData(e)} />
                             <p>Password</p>
                         </div>
-                        <button disabled={true}>Sign In</button>
+                        <button style={disabled ? { cursor: 'not-allowed', backgroundColor: 'rgb(117, 117, 117)' } : { backgroundColor: '' }} disabled={disabled}>Sign In</button>
                         <p className='forgot'>Forgot your password?</p>
                     </div>
 
