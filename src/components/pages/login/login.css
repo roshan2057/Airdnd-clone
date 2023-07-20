@@ -1,7 +1,6 @@
 .login {
     max-width: 1440px;
     margin: 1rem auto;
-    min-height: 100vh;
 }
 
 .login-header {
@@ -27,8 +26,10 @@
 
 .login-box {
     width: 100%;
+    height: 90vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .login-form {
@@ -85,4 +86,53 @@
 hr {
     width: 50%;
     border: 1px solid rgb(189, 189, 189);
+}
+
+.login-form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.login-form-box input,
+fieldset {
+    width: 500px;
+    height: 56px;
+    background-color: transparent;
+    border-color: rgb(117, 117, 117);
+    z-index: -10;
+}
+
+.input-div {
+    position: relative;
+}
+
+.input-div p {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: rgb(117, 117, 117);
+}
+
+.login-form-box button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(63, 81, 181);
+}
+
+.login-form-box button:hover {
+    background-color: #26316d;
+}
+
+.forgot {
+    color: rgb(23, 105, 170);
+    cursor: pointer;
+}
+
+
+.forgot:hover {
+    text-decoration: underline;
 }
