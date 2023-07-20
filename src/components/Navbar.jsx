@@ -2,6 +2,7 @@ import React from 'react'
 import './navbar.css'
 import { Button } from '@chakra-ui/react'
 import { Stack } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -26,10 +27,11 @@ const Navbar = () => {
                     <div className="LgnRgrBtn">
                         <Stack direction='row' spacing={4} align='center'>
                             <Button className='navLogin' colorScheme='teal' variant='outline'>
-                                Login
+                               <Link to='/login'>Login</Link>
                             </Button>
                             <Button className='navbutton' colorScheme='orange' variant='solid'>
-                                Sign UP
+                            <Link to='/signup'>Sign up</Link>
+
                             </Button>
                         </Stack>
                     </div>
