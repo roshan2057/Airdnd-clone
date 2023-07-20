@@ -109,11 +109,27 @@ fieldset {
     position: relative;
 }
 
-.input-div p {
+.not-clicked {
     position: absolute;
     top: 1rem;
     left: 1rem;
     color: rgb(117, 117, 117);
+}
+
+/* .not-clicked {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: rgb(117, 117, 117);
+} */
+
+.clicked {
+    position: absolute;
+    top: -12px;
+    left: 1rem;
+    color: rgb(117, 117, 117);
+    background-color: #e4e9f7;
+    padding: 0 5px;
 }
 
 .login-form-box button {

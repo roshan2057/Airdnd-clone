@@ -11,6 +11,10 @@ const Login = () => {
         password: ''
     });
 
+    const handleClicked = () => {
+        setClicked(true)
+    }
+
     const handleData = (e) => {
         const { name, value } = e.target;
         setData((prev) => ({
@@ -18,7 +22,6 @@ const Login = () => {
             [name]: value,
         }))
     }
-
     useEffect(() => {
         // Email validation regex pattern
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -50,13 +53,13 @@ const Login = () => {
                         <hr />
                     </div>
                     <div className='login-form-box'>
-                        <div className='input-div' >
+                        <div className='input-div' onClick={handleClicked} >
                             <input type="text" name="email" value={data.email} onChange={(e) => handleData(e)} />
-                            <p>Email</p>
+                            <p className={`${clicked ? 'clicked' : 'not-clicked'}`}>Email</p>
                         </div>
-                        <div className='input-div' >
+                        <div className='input-div' onClick={handleClicked} >
                             <input type="text" name="password" value={data.password} onChange={(e) => handleData(e)} />
-                            <p>Password</p>
+                            <p className={`${clicked ? 'clicked' : 'not-clicked'}`}>Password</p>
                         </div>
                         <button style={disabled ? { cursor: 'not-allowed', backgroundColor: 'rgb(117, 117, 117)' } : { backgroundColor: '' }} disabled={disabled}>Sign In</button>
                         <p className='forgot'>Forgot your password?</p>
