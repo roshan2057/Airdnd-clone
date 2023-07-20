@@ -6,6 +6,7 @@ const Signup = () => {
     <>
     <div className='signup'>
         Create a free account
+        continue with google
     </div>
     </>
   )
