@@ -2,4 +2,55 @@
     display: flex;
     margin-top: 9rem;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.signForm{
+    display: grid;
+    
+  
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    
+}
+.fitem{
+    margin: 10px;
+}
+.specialItem{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.continueButton:hover{
+    cursor: pointer;
+    color:blue;
+}
+.buttonBlock{
+    width: 100%;
+    position: relative;
+    right:15px;
+}
+.dash {
+    position: relative;
+}
+.dash:before{
+    content: "";
+    width: 450px;
+    height: 2px;
+    display: block;
+    background: black;
+    position:absolute;
+    top:50%;
+    left: 20px;
+}
+.dash:after{
+    content: "";
+    width: 450px;
+    height: 2px;
+    display: block;
+    background: black;
+    position:absolute;
+    top:50%;
+right: 20px;
 }
