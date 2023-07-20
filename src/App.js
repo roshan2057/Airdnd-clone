@@ -3,8 +3,8 @@ import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home/Home';
-import Login from './components/pages/Login/Login';
 import Signup from './components/pages/Signup/Signup';
+import Login from './components/pages/Login/Login';
 
 function App() {
   return (

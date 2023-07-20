@@ -98,7 +98,6 @@ const Navbar = () => {
                         </Stack>
                     </div>
                 </div>
-                <hr />
             </nav>
         </div>
     )
