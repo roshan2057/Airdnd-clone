@@ -88,13 +88,13 @@ nav .nav-bar .logo a{
     list-style: none;
 }
 
-.nav-links li a{
+.nav-links li {
     position: relative;
     font-size: 17px;
     font-weight: 400;
     color: var(--text-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 30px;
 }
 
 .nav-bar .LgnRgrBtn{
@@ -142,7 +142,7 @@ nav .nav-bar .logo a{
 }
 
 .navLogin:hover{
-    background:rgb(231, 97, 15) ;
+    background:var(--theme-color) ;
     color: white;
 }
 .navbutton:hover{
@@ -151,10 +151,6 @@ nav .nav-bar .logo a{
 }
 
 
-
-body.dark .search-field input{
-    color: var(--text-color);
-}
 
 .search-field i{
     position: absolute;
@@ -166,6 +162,76 @@ body.dark .search-field input{
 
 body.dark .search-field i{
     color: var(--text-color);
+}
+.LgnRgrBtn .navLogin{
+    border: 1px solid var(--theme-color);
+    padding:0.5rem 3rem;
+    border-radius: 6px;
+
+}
+.LgnRgrBtn .navbutton{
+    background-color: var(--theme-color);
+    color: var(--body-color);
+    padding:0.5rem 2rem;
+
+    border-radius: 6px;
+
+}
+.dropdown span{
+    color: black;
+}
+.dropdown span:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+}
+.content a{
+    color: white;
+    padding: 10px;
+}
+
+.subdropdown p{
+    text-align: start;
+    padding: 1rem 2rem;
+}
+
+
+
+.content{
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    background-color: var(--theme-color);
+    border-radius: 1rem;
+    min-width: 250px;
+    color: white;
+    margin: 0;
+    z-index: 1;
+    text-align: start;
+}
+.sub-dropdown-content a{
+    padding:0;
+}
+
+.dropdown:hover .content{
+display: flex;
+}
+
+.sub-content{
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    background:var(--theme-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: -40px;
+    min-width: 200px;
+    z-index: 1;
+    left: 100%;
+}
+.subdropdown:hover .sub-content{
+    display: flex;
 }
 
 @media (max-width: 790px) {

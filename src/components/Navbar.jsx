@@ -1,6 +1,5 @@
 import React from 'react'
 import './navbar.css'
-import { Button } from '@chakra-ui/react'
 import { Stack } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
@@ -11,28 +10,91 @@ const Navbar = () => {
             <nav>
                 <div className="nav-bar">
                     <i className='bx bx-menu sidebarOpen' ></i>
-                    <span className="logo navLogo"><a href="/">IRON-RIM</a></span>
+                    <span className="logo navLogo">
+                        <Link to="/">IRON-RIM</Link>
+                    </span>
                     <div className="menu">
                         <div className="logo-toggle">
                             <i className='bx bx-x siderbarClose'></i>
                         </div>
                         <ul className="nav-links">
-                            <li><a href="/">Solutions</a></li>
-                            <li><a href="/">Resources</a></li>
-                            <li><a href="/">Contact Us</a></li>
+                            <li className='dropdown'>
+                                <span className='dropdown-content'>
+                                    Solutions
+                                </span>
+                                <div className='content'>
+
+                                    <div className='subdropdown'>
+                                        <p className='sub-dropdown-content'>
+                                            MarketMinder
+                                        </p>
+                                        <div className='sub-content'>
+                                            <Link to="/">Market Research</Link>
+                                            <Link to="/">Dynamic Pricing</Link>
+                                            <Link to="/">Real Estate Investing</Link>
+                                            <Link to="/">Performance Benchmarking</Link>
+                                        </div>
+                                    </div>
+
+                                    <div className='subdropdown'>
+                                        <p className='sub-dropdown-content'>
+                                            Enterprise Solutions
+                                        </p>
+                                        <div className='sub-content'>
+                                            <Link to="/">Property Managers</Link>
+                                            <Link to="/">Real Estate Investores</Link>
+                                            <Link to="/">DMOs and Tourism Organizations</Link>
+                                            <Link to="/">Agents and Brokerages</Link>
+                                            <Link to="/">Hedge Funds and Financial Services</Link>
+
+                                        </div>
+                                    </div>
+
+                                    <div className='subdropdown'>
+                                        <p className='sub-dropdown-content'>
+                                            <Link to="/">Pricing</Link>
+
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </li>
+                            <li className='dropdown'>
+                                <span className='dropdown-content'>
+                                    Resources
+                                </span>
+                                <div className='content'>
+                                    <Link to="/">Blog</Link>
+                                    <Link to="/">Press/News</Link>
+                                    <Link to="/">AirDNA Research</Link>
+                                    <Link to="/">Videos/Webinars</Link>
+                                    <Link to="/">Case Studies</Link>
+                                    <Link to="/">Guides</Link>
+                                    <Link to="/">Podcasts</Link>
+
+                                </div>
+                            </li>
+                            <li className='dropdown'>
+                                <span className='dropdown-content'>
+                                    Contact Us
+                                </span>
+                                <div className='content'>
+                                    <Link to="/">Sales & Support</Link>
+                                    <Link to="/">Press</Link>
+
+                                </div>
+                            </li>
 
                         </ul>
                     </div>
 
                     <div className="LgnRgrBtn">
-                        <Stack direction='row' spacing={4} align='center'>
-                            <Button className='navLogin' colorScheme='teal' variant='outline'>
-                               <Link to='/login'>Login</Link>
-                            </Button>
-                            <Button className='navbutton' colorScheme='orange' variant='solid'>
-                            <Link to='/signup'>Sign up</Link>
+                        <Stack direction='row' spacing={15} align='center'>
+                            <Link to='/login' className='navLogin' variant='outline'>Login</Link>
 
-                            </Button>
+                            <Link to='/signup' className='navbutton' variant='solid'>Sign up</Link>
+
                         </Stack>
                     </div>
                 </div>
