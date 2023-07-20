@@ -40,10 +40,6 @@ const Login = () => {
 
     return (
         <section className='login'>
-            <header className='login-header'>
-                <p className='login-logo'>AIRDNA</p>
-                <p className='login-sign'>Don't have an account? <a href="/signup">Sign Up</a></p>
-            </header>
             <div className='login-box'>
                 <form className='login-form' autoComplete="off">
                     <h2>Welcome to MarketMinder</h2>

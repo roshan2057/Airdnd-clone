@@ -1,0 +1,148 @@
+.headersection {
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+
+.headertext {
+    margin: 10rem 6rem 3rem 6rem;
+    text-align: start;
+    position: relative;
+    z-index: 1;
+
+}
+
+.headertext h1 {
+    font-size: 50px;
+}
+
+.headerimage {
+    position: absolute;
+    top: 7rem;
+    right: 7rem;
+    z-index: 0;
+
+}
+
+.headertext input {
+    width: 30rem;
+}
+
+.section2 {
+    display: flex;
+    margin: 5rem 8rem;
+
+}
+
+.section2 .section2_text {
+    text-align: start;
+    font-size: 20px;
+}
+
+.section2 .section2_text h3 {
+
+    font-size: 45px;
+}
+
+.section2 .section2_text button {
+    margin: 20px 0;
+}
+
+.section2 .section2_img {
+    margin: 0 0 0 10px;
+}
+
+.section3 {
+    display: flex;
+    margin: 0 8rem;
+}
+
+.section3 .items {
+    margin: 0 1rem;
+    text-align: center;
+
+}
+
+.section4 {
+    display: flex;
+    margin: 10rem 8rem;
+    justify-content: space-between;
+}
+
+.section4 .sec4_text {
+    text-align: start;
+    width: 50%;
+}
+
+#header {
+    color: var(--theme-color);
+}
+
+.sec4_text span {
+    font-size: 40px;
+    color: rgb(0, 19, 111);
+}
+
+.sec4_text button {
+    width: 350px;
+    margin: 20px 0;
+}
+
+.section5 {
+    display: flex;
+    margin: 10rem 8rem;
+    justify-content: space-between;
+}
+
+.section5 .sec5_text {
+    width: 100%;
+    margin-right: 5rem;
+}
+
+.section5 .sec5_text span {
+    font-size: 40px;
+    color: rgb(0, 19, 111);
+}
+
+.section5 .sec5_right {
+    background-color: blue;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 90%;
+    color: white;
+    margin-right: 5rem;
+}
+
+.section5 .sec5_right h3 {
+    font-size: 30px;
+}
+
+.section6 {
+    margin: 10rem 8rem;
+}
+
+.section6 .sec6_text {
+    width: 50%;
+}
+
+.section6 .sec6_text span {
+    font-size: 40px;
+    color: rgb(0, 19, 111);
+}
+
+.section6 .sec6_text button {
+    width: 250px;
+    margin: 40px 0px;
+}
+
+.section6 .blog_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section6 .blog {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}

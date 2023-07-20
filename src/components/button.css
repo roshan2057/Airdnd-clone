@@ -1,9 +1,10 @@
 button{
-    background-color: #FF5722;
+    background-color:var(--theme-color);
     font-size: 18px;
-    width: 9rem;
-    height: 3rem;
+    width: 11rem;
+    height: 3.5rem;
     box-sizing: border-box;
-    color: #fff;
+    color: #fff ;
     border-radius: 5px;
+    margin: 1rem;
 }

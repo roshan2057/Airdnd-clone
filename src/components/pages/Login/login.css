@@ -1,28 +1,8 @@
 .login {
     max-width: 1440px;
-    margin: 1rem auto;
+    margin: 5rem auto;
 }
 
-.login-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.login-logo {
-    font-size: 30px;
-    letter-spacing: 0.2rem;
-}
-
-.login-sign {
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.login-sign a:hover {
-    color: rgb(23, 105, 170);
-    text-decoration: underline;
-}
 
 .login-box {
     width: 100%;
