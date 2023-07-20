@@ -3,7 +3,8 @@ import './login.css'
 
 const Login = () => {
 
-    const [clicked, setClicked] = useState(false);
+    const [clickedEmail, setClickedEmail] = useState(false);
+    const [clickedPass, setClickedPass] = useState(false);
     const [disabled, setDisabled] = useState(true);
 
     const [data, setData] = useState({
@@ -11,8 +12,11 @@ const Login = () => {
         password: ''
     });
 
-    const handleClicked = () => {
-        setClicked(true)
+    const handleEmailClicked = () => {
+        setClickedEmail(true)
+    }
+    const handlePassClicked = () => {
+        setClickedPass(true)
     }
 
     const handleData = (e) => {
@@ -53,13 +57,13 @@ const Login = () => {
                         <hr />
                     </div>
                     <div className='login-form-box'>
-                        <div className='input-div' onClick={handleClicked} >
-                            <input type="text" name="email" value={data.email} onChange={(e) => handleData(e)} />
-                            <p className={`${clicked ? 'clicked' : 'not-clicked'}`}>Email</p>
+                        <div className='input-div' onClick={handleEmailClicked} >
+                            <input type="email" name="email" value={data.email} onChange={(e) => handleData(e)} />
+                            <p className={`${clickedEmail ? 'clicked' : 'not-clicked'}`}>Email</p>
                         </div>
-                        <div className='input-div' onClick={handleClicked} >
-                            <input type="text" name="password" value={data.password} onChange={(e) => handleData(e)} />
-                            <p className={`${clicked ? 'clicked' : 'not-clicked'}`}>Password</p>
+                        <div className='input-div' onClick={handlePassClicked} >
+                            <input type="password" name="password" value={data.password} onChange={(e) => handleData(e)} />
+                            <p className={`${clickedPass ? 'clicked' : 'not-clicked'}`}>Password</p>
                         </div>
                         <button style={disabled ? { cursor: 'not-allowed', backgroundColor: 'rgb(117, 117, 117)' } : { backgroundColor: '' }} disabled={disabled}>Sign In</button>
                         <p className='forgot'>Forgot your password?</p>
