@@ -31,8 +31,8 @@ const Navbar = () => {
                                         <div className='sub-content'>
                                             <Link to="/vacation-rental-data">Market Research</Link>
                                             <Link to="/ironrim-pricing-tool">Dynamic Pricing</Link>
-                                            <Link to="/">Real Estate Investing</Link>
-                                            <Link to="/">Performance Benchmarking</Link>
+                                            <Link to="/best-place-to-invest">Real Estate Investing</Link>
+                                            <Link to="/my-properties">Performance Benchmarking</Link>
                                         </div>
                                     </div>
 

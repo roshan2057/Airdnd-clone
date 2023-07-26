@@ -7,6 +7,8 @@ import Signup from './components/pages/Signup/Signup';
 import Login from './components/pages/Login/Login';
 import Vacation from './components/pages/Market_Research/Vacation';
 import Pricing from './components/pages/Dynamic_Pricing/Pricing_tool';
+import Investing from './components/pages/Real_Estate_investing/Investing';
+import Properties from './components/pages/Performance_Benchmarking/Properties';
 
 function App() {
   return (
@@ -16,9 +18,15 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
-        {/* solution  */}
+        {/* solution / MarketMinder */}
         <Route path='/vacation-rental-data' element={<Vacation/>}/>
         <Route path='/ironrim-pricing-tool' element={<Pricing/>}/>
+        <Route path='/best-place-to-invest' element={<Investing/>}/>
+        <Route path='/my-properties' element={<Properties/>}/>
+
+        {/* solution / EnterpriseSolution */}
+        
+
       </Routes>
 
      <Footer/>
