@@ -1,5 +1,134 @@
-.login{
+.login {
+    max-width: 1440px;
+    margin: 5rem auto;
+}
+
+
+.login-box {
+    width: 100%;
+    height: 90vh;
     display: flex;
-    margin-top: 9rem;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.login-form h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+    font-weight: 700;
+}
+
+.login-form-top {
+    width: 500px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form-top:hover {
+    border-color: rgb(117, 117, 117);
+    background-color: rgb(245, 245, 245);
+}
+
+.login-form-top p {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(66, 66, 66);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+}
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: rgb(189, 189, 189);
+}
+
+hr {
+    width: 50%;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.login-form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.login-form-box input,
+fieldset {
+    width: 500px;
+    height: 56px;
+    background-color: transparent;
+    border-color: rgb(117, 117, 117);
+    z-index: -10;
+}
+
+.input-div {
+    position: relative;
+}
+
+.not-clicked {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: rgb(117, 117, 117);
+}
+
+/* .not-clicked {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: rgb(117, 117, 117);
+} */
+
+.clicked {
+    position: absolute;
+    top: -12px;
+    left: 1rem;
+    color: rgb(117, 117, 117);
+    background-color: #e4e9f7;
+    padding: 0 5px;
+}
+
+.login-form-box button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(63, 81, 181);
+}
+
+.login-form-box button:hover {
+    background-color: #26316d;
+}
+
+.forgot {
+    color: rgb(23, 105, 170);
+    cursor: pointer;
+}
+
+
+.forgot:hover {
+    text-decoration: underline;
 }

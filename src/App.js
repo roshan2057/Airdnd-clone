@@ -3,8 +3,8 @@ import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home/Home';
-import Login from './components/pages/Login/Login';
 import Signup from './components/pages/Signup/Signup';
+import Login from './components/pages/Login/Login';
 import Vacation from './components/pages/Market_Research/Vacation';
 import Pricing from './components/pages/Dynamic_Pricing/Pricing_tool';
 
