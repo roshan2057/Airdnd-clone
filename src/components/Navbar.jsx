@@ -29,8 +29,8 @@ const Navbar = () => {
                                             MarketMinder
                                         </p>
                                         <div className='sub-content'>
-                                            <Link to="/">Market Research</Link>
-                                            <Link to="/">Dynamic Pricing</Link>
+                                            <Link to="/vacation-rental-data">Market Research</Link>
+                                            <Link to="/ironrim-pricing-tool">Dynamic Pricing</Link>
                                             <Link to="/">Real Estate Investing</Link>
                                             <Link to="/">Performance Benchmarking</Link>
                                         </div>
