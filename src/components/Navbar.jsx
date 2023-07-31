@@ -41,7 +41,7 @@ const Navbar = () => {
                                             Enterprise Solutions
                                         </p>
                                         <div className='sub-content'>
-                                            <Link to="/">Property Managers</Link>
+                                            <Link to="/vacation-rental-managers">Property Managers</Link>
                                             <Link to="/">Real Estate Investores</Link>
                                             <Link to="/">DMOs and Tourism Organizations</Link>
                                             <Link to="/">Agents and Brokerages</Link>

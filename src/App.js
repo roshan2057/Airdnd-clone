@@ -9,6 +9,7 @@ import Vacation from './components/pages/Market_Research/Vacation';
 import Pricing from './components/pages/Dynamic_Pricing/Pricing_tool';
 import Investing from './components/pages/Real_Estate_investing/Investing';
 import Properties from './components/pages/Performance_Benchmarking/Properties';
+import RentalManagers from './components/pages/Property_Managers/RentalManagers';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path='/my-properties' element={<Properties/>}/>
 
         {/* solution / EnterpriseSolution */}
+        <Route path='/vacation-rental-managers' element={<RentalManagers/>}/>
+
         
 
       </Routes>
